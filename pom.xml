@@ -18,7 +18,7 @@
 
   <groupId>guru.springframework</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>0.0.2  -SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
 
   <name>spring-petclinic</name>
   <description>Pet Clinic Project</description>
@@ -26,8 +26,6 @@
   <properties>
     <java.version>1.8</java.version>
   </properties>
-
-
 
   <build>
     <plugins>
@@ -40,13 +38,23 @@
         <artifactId>maven-release-plugin</artifactId>
         <configuration>install</configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.0</version>
+        <configuration>
+          <argLine>
+            --illegal-access=permit
+          </argLine>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
   <scm>
     <url>https://github.com/dcclifford/spring-petclinic</url>
     <developerConnection>scm:git:https://github.com/dcclifford/spring-petclinic.git</developerConnection>
-    <!--<tag>spring-petclinic-0.0.1</tag> -->
+    <tag>HEAD</tag>
   </scm>
 
 </project>
