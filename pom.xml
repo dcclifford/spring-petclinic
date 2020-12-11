@@ -18,7 +18,7 @@
 
   <groupId>guru.springframework</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2  -SNAPSHOT</version>
 
   <name>spring-petclinic</name>
   <description>Pet Clinic Project</description>
