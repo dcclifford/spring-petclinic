@@ -6,12 +6,13 @@
   <artifactId>spring-petclinic</artifactId>
   <version>0.0.3-SNAPSHOT</version>
 
+  <packaging>pom</packaging>
+
   <modules>
     <module>pet-clinic-data</module>
     <module>pet-clinic-web</module>
   </modules>
 
-  <packaging>pom</packaging>
 
   <name>spring-petclinic</name>
   <description>Pet Clinic Project</description>
@@ -28,8 +29,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>11</java.version>
     <jaxb.version>2.3.0</jaxb.version>
-    <maven.compiler.source>${java.version}</maven.compiler.source>
-    <maven.compiler.target>${java.version}</maven.compiler.target>
+<!--    <maven.compiler.source>${java.version}</maven.compiler.source>-->
+<!--    <maven.compiler.target>${java.version}</maven.compiler.target>-->
   </properties>
 
   <build>
